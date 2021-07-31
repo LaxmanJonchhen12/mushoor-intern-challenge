@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  border: 2px solid white;
+  width: 350px;
+  height: 350px;
+  margin: 5rem 1rem 1rem 1rem;
+  background: white;
+  border-radius: 20px;
+  text-align: justify;
+}
+
+#main__title {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.description {
+  padding: 1rem;
+  font-family: monospace;
+}
+
+.additional__text {
+  display: none;
+}
+
+.read__more {
+  background: black;
+  color: white;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  height: 35px;
+  width: 100px;
+  border: none;
+  margin-left: 1rem;
+}
+
+/* classes for hiding and showing additional text */
+.description.show__text .additional__text {
+  display: inline;
+}
+
+.description.show__text .dot {
+  display: none;
+}
